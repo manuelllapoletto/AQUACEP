@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eaf8ff">
+<meta name="description" content="AquaCEP — projeto educacional sobre aquecimento solar de piscinas, Física, tecnociência, robótica e sustentabilidade.">
+<title>AquaCEP | Sol + Água + Tecnologia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<header class="topbar">
+ <div class="container nav-wrap">
+  <a class="brand" href="#inicio" aria-label="AquaCEP, página inicial">
+   <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="7" fill="#fff"/><path d="M16 1v5M16 26v5M1 16h5M26 16h5M5.4 5.4 9 9M23 23l3.6 3.6M26.6 5.4 23 9M9 23l-3.6 3.6" stroke="#9a6a00" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+   AquaCEP
+  </a>
+  <nav class="nav-links" id="mainNav" aria-label="Navegação principal">
+   <a href="#inicio">Início</a><a href="#projeto">Projeto</a><a href="#tecnociencia">Tecnociência</a><a href="#simulador">Simulador</a><a href="#robotica">Robótica</a><a href="#sustentabilidade">Sustentabilidade</a><a href="#acessibilidade">Acessibilidade</a>
+  </nav>
+  <div class="nav-actions">
+   <button class="icon-btn" id="fontPlus" aria-label="Aumentar fonte" title="Aumentar fonte">A+</button>
+   <button class="icon-btn" id="contrastBtn" aria-label="Ativar alto contraste" title="Alto contraste">◐</button>
+   <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">☰</button>
+  </div>
+ </div>
+</header>
+<main id="conteudo">
+<section class="hero" id="inicio">
+ <div class="container hero-grid">
+  <div>
+   <span class="eyebrow">☀️ Projeto Integrador · 3º trimestre</span>
+   <h1>Tecnologia que aquece.<br><span>Ciência que transforma.</span></h1>
+   <p>Uma investigação sobre como a energia solar, a Física e a automação podem contribuir para aquecer a piscina da escola de maneira consciente e sustentável.</p>
+   <div class="hero-actions">
+    <a class="btn btn-primary" href="#tecnociencia">Explorar a investigação <span aria-hidden="true">→</span></a>
+    <a class="btn btn-secondary" href="#simulador">Testar simulador</a>
+   </div>
+  </div>
+  <div class="hero-art" aria-label="Ilustração de uma piscina, coletores solares e sol">
+   <div class="sun-disc"></div>
+   <div class="pool-illustration">
+    <div class="collector"></div><div class="pipe"></div>
+    <div class="pool-water"><i class="bubble b1"></i><i class="bubble b2"></i><i class="bubble b3"></i></div>
+   </div>
+   <div class="hero-note">SOL + ÁGUA + TECNOLOGIA</div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="projeto">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">01 · Conheça o projeto</span>
+   <h2>Uma ideia movida pelo Sol</h2>
+   <p>O AquaCEP apresenta uma proposta educativa: estudar como a energia solar pode ser aproveitada no aquecimento de uma piscina e como a automação pode monitorar o funcionamento do sistema.</p>
+  </div>
+  <div class="grid-3">
+   <article class="card"><div class="card-icon">☀️</div><h3>Energia solar</h3><p>Investigar como a radiação do Sol pode ser transformada em energia térmica ou elétrica.</p></article>
+   <article class="card"><div class="card-icon">🌡️</div><h3>Ciência aplicada</h3><p>Usar conceitos de calor, temperatura, transferência de energia e eficiência para analisar a proposta.</p></article>
+   <article class="card"><div class="card-icon">🤖</div><h3>Automação</h3><p>Explorar como sensores, atuadores e Arduino podem ajudar no monitoramento e controle do sistema.</p></article>
+  </div>
+  <div class="callout mt-24"><strong>Pergunta norteadora:</strong> é possível aquecer a piscina da escola com energia solar? A resposta depende do volume de água, da temperatura desejada, da radiação solar disponível, da área de coletores e das perdas de calor.</div>
+ </div>
+</section>
+
+<section class="section soft" id="tecnociencia">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">02 · Tecnociência · Tema 09</span>
+   <h2>É possível aquecer a piscina da escola com energia solar?</h2>
+   <p>Para responder, precisamos compreender a Física do aquecimento e avaliar as tecnologias disponíveis. Não basta saber que existe Sol: é necessário estimar quanta energia a piscina precisa e quanta energia o sistema consegue fornecer.</p>
+  </div>
+  <div class="flow-diagram">
+   <h3 class="center">Como funciona um sistema solar térmico para piscina?</h3>
+   <div class="flow-row" aria-label="Etapas do aquecimento solar térmico">
+    <div class="flow-step"><span class="emoji">☀️</span><strong>Radiação solar</strong><small>Energia do Sol chega ao coletor.</small></div><div class="flow-arrow" aria-hidden="true">→</div>
+    <div class="flow-step"><span class="emoji">♨️</span><strong>Coletor térmico</strong><small>O material absorve energia e aquece.</small></div><div class="flow-arrow" aria-hidden="true">→</div>
+    <div class="flow-step"><span class="emoji">💧</span><strong>Circulação</strong><small>A água passa pelo coletor e recebe calor.</small></div>
+   </div>
+   <p class="small muted center">Representação simplificada: a instalação real inclui tubulações, bomba, válvulas e controles adequados.</p>
+  </div>
+
+  <div class="section-head mt-24">
+   <span class="kicker">Conceitos físicos</span>
+   <h2>O que acontece com a água?</h2>
+   <p>Calor é energia transferida por diferença de temperatura. Temperatura indica o estado térmico da água. Ao receber energia, a água pode aumentar sua temperatura.</p>
+  </div>
+  <div class="grid-3">
+   <article class="card"><div class="card-icon">🌞</div><h3>Radiação</h3><p>Energia transferida por ondas eletromagnéticas. A radiação solar pode ser absorvida pela superfície dos coletores.</p></article>
+   <article class="card"><div class="card-icon">↗️</div><h3>Condução e convecção</h3><p>O calor passa entre materiais em contato e é transportado pelo movimento do fluido, como a água que circula.</p></article>
+   <article class="card"><div class="card-icon">💨</div><h3>Evaporação</h3><p>A evaporação na superfície da piscina pode retirar energia térmica da água. Vento e umidade influenciam essa perda.</p></article>
+  </div>
+
+  <div class="grid-2 mt-24">
+   <div class="formula">
+    <span class="pill">Equação fundamental</span>
+    <div class="equation">Q = m · c · ΔT</div>
+    <p>Energia térmica necessária para variar a temperatura da água.</p>
+   </div>
+   <div class="card">
+    <h3>Entendendo as variáveis</h3>
+    <p><b>Q</b> — energia térmica (joules).</p>
+    <p><b>m</b> — massa da água (kg).</p>
+    <p><b>c</b> — calor específico da água (aprox. 4.186 J/kg·°C).</p>
+    <p><b>ΔT</b> — variação de temperatura (°C).</p>
+    <p class="small muted">O cálculo inicial não considera as perdas de calor para o ambiente.</p>
+   </div>
+  </div>
+
+  <div class="section-head mt-24">
+   <span class="kicker">Duas tecnologias</span>
+   <h2>Solar térmico e fotovoltaico: qual é a diferença?</h2>
+   <p>Os dois aproveitam a energia do Sol, mas fazem conversões diferentes.</p>
+  </div>
+  <div class="grid-2">
+   <article class="card compare-card thermal">
+    <span class="pill">Aquecimento direto</span><div class="card-icon mt-24">♨️</div>
+    <h3>Solar térmico</h3>
+    <p>O coletor absorve a radiação solar e transfere calor diretamente para a água que circula pelo sistema.</p>
+    <ul><li>É uma aplicação direta para aquecer água.</li><li>Pode ter circuito simples para piscina.</li><li>Depende de sol, área coletora e circulação.</li><li>O desempenho diminui em períodos de menor radiação e pode exigir apoio complementar.</li></ul>
+   </article>
+   <article class="card compare-card pv">
+    <span class="pill">Geração de eletricidade</span><div class="card-icon mt-24">⚡</div>
+    <h3>Solar fotovoltaico</h3>
+    <p>As células fotovoltaicas convertem a luz em eletricidade. Essa energia pode alimentar uma bomba de calor ou outro equipamento elétrico de aquecimento.</p>
+    <ul><li>A eletricidade pode atender outros usos.</li><li>É modular e pode ser integrado à instalação elétrica.</li><li>Exige inversor e equipamentos de aquecimento apropriados.</li><li>O resultado depende da geração, do equipamento e do consumo.</li></ul>
+   </article>
+  </div>
+  <div class="table-wrap mt-24">
+   <table>
+    <thead><tr><th>Critério</th><th>Solar térmico</th><th>Solar fotovoltaico</th></tr></thead>
+    <tbody>
+     <tr><td>O que produz?</td><td>Calor transferido à água</td><td>Eletricidade</td></tr>
+     <tr><td>Componente principal</td><td>Coletor solar térmico</td><td>Módulo fotovoltaico</td></tr>
+     <tr><td>Como aquece?</td><td>Diretamente, pela circulação de água no coletor</td><td>Indiretamente, alimentando equipamento elétrico</td></tr>
+     <tr><td>Limitações</td><td>Variação solar, perdas térmicas, área e hidráulica</td><td>Variação solar, espaço, inversor e eficiência do aquecedor</td></tr>
+     <tr><td>Possível uso adicional</td><td>Foco no aquecimento</td><td>Eletricidade para outros equipamentos</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="callout mt-24"><strong>Atenção:</strong> não existe uma tecnologia universalmente melhor para qualquer escola. A escolha depende do clima, espaço disponível, perfil de uso, custo, manutenção, instalação existente e dimensionamento.</div>
+ </div>
+</section>
+
+<section class="section" id="simulador">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">03 · Laboratório virtual</span>
+   <h2>Quanto de energia a piscina precisaria?</h2>
+   <p>Altere as dimensões e as temperaturas para estimar a energia térmica ideal. Os valores iniciais são exemplos didáticos, não medidas da piscina do CEP.</p>
+  </div>
+  <div class="calculator">
+   <h3>Simulador de energia térmica</h3>
+   <div class="field-grid">
+    <div class="field"><label for="poolLength">Comprimento (m)</label><input id="poolLength" type="number" min="0.1" max="100" step=".1" value="10"></div>
+    <div class="field"><label for="poolWidth">Largura (m)</label><input id="poolWidth" type="number" min="0.1" max="100" step=".1" value="5"></div>
+    <div class="field"><label for="poolDepth">Profundidade média (m)</label><input id="poolDepth" type="number" min="0.1" max="10" step=".1" value="1.4"></div>
+   </div>
+   <div class="field-grid mt-24">
+    <div class="field"><label for="tempStart">Temperatura inicial (°C)</label><input id="tempStart" type="number" min="0" max="50" step=".5" value="22"></div>
+    <div class="field"><label for="tempGoal">Temperatura desejada (°C)</label><input id="tempGoal" type="number" min="0" max="50" step=".5" value="28"></div>
+    <div class="field"><label for="solarIrradiance">Radiação diária (kWh/m²/dia)</label><input id="solarIrradiance" type="number" min=".1" max="10" step=".1" value="4.5"></div>
+   </div>
+   <div class="field-grid mt-24">
+    <div class="field"><label for="collectorArea">Área de coletores (m²)</label><input id="collectorArea" type="number" min=".1" max="1000" step=".5" value="10"></div>
+    <div class="field"><label for="collectorEfficiency">Eficiência estimada (%)</label><input id="collectorEfficiency" type="number" min="1" max="90" step="1" value="50"></div>
+    <div class="field"><label for="poolShape">Formato da piscina</label><select id="poolShape"><option value="retangular">Retangular (estimativa)</option><option value="other">Outro formato (volume informado pelas dimensões equivalentes)</option></select></div>
+   </div>
+   <div class="results" aria-live="polite" aria-atomic="true">
+    <div class="result"><span>Volume estimado</span><strong id="volumeOut">70,0 m³</strong></div>
+    <div class="result highlight"><span>Energia ideal necessária</span><strong id="energyOut">488,4 kWh</strong></div>
+    <div class="result"><span>Ganho solar diário estimado</span><strong id="gainOut">22,5 kWh/dia</strong></div>
+   </div>
+   <div class="result mt-24"><span>Tempo teórico estimado, sem perdas</span><strong id="daysOut">21,7 dias</strong><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><span id="progressLabel">Estimativa didática baseada nas hipóteses informadas.</span></div>
+   <p class="calc-note" id="calcError" role="status"></p>
+   <p class="calc-note">Modelo simplificado: volume = comprimento × largura × profundidade média; massa ≈ volume × 1.000 kg/m³; calor específico = 4,186 kJ/kg·°C. Energia solar útil estimada = radiação diária × área coletora × eficiência informada. O tempo calculado ignora nuvens, sombreamento, perdas pela superfície, vento, tubulações, rendimento variável e energia consumida pela bomba. Portanto, não é um projeto executivo nem uma previsão real de prazo.</p>
+   <button class="btn btn-secondary mt-24" id="resetCalc" type="button">Restaurar valores de exemplo</button>
+  </div>
+  <div class="grid-2 mt-24">
+   <article class="card"><div class="card-icon">📐</div><h3>Quais dados reais precisamos?</h3><p>Comprimento, largura, profundidade média, volume, temperatura atual e desejada, área disponível para coletores, orientação e sombreamento do telhado, radiação solar local e rotina de uso da piscina.</p></article>
+   <article class="card"><div class="card-icon">🌬️</div><h3>O que o cálculo ainda não inclui?</h3><p>Perdas por evaporação, convecção e radiação, reposição de água, cobertura térmica, temperatura ambiente, vento e eficiência real do sistema. Esses fatores precisam ser avaliados no dimensionamento técnico.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section soft" id="robotica">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">04 · Robótica e automação</span>
+   <h2>Quando a tecnologia monitora a piscina</h2>
+   <p>A automação pode acompanhar condições do sistema e acionar componentes conforme uma lógica programada. A maquete representa, em pequena escala, partes de uma possível solução.</p>
+  </div>
+  <div class="flow-diagram">
+   <h3 class="center">Ciclo simplificado de automação</h3>
+   <div class="flow-row">
+    <div class="flow-step"><span class="emoji">📡</span><strong>Sensores</strong><small>Coletam informações do ambiente ou do sistema.</small></div><div class="flow-arrow">→</div>
+    <div class="flow-step"><span class="emoji">🧠</span><strong>Arduino</strong><small>Executa a lógica programada.</small></div><div class="flow-arrow">→</div>
+    <div class="flow-step"><span class="emoji">⚙️</span><strong>Atuadores</strong><small>Acionam elementos do protótipo.</small></div>
+   </div>
+  </div>
+  <div class="component-list mt-24">
+   <div class="component"><b>Arduino Uno</b><span>Microcontrolador que executa o programa e coordena entradas e saídas.</span></div>
+   <div class="component"><b>HC-SR04</b><span>Sensor ultrassônico usado para medir distância, por exemplo, nível aproximado com montagem adequada.</span></div>
+   <div class="component"><b>Display OLED SSD1306</b><span>Apresenta informações e estados do sistema.</span></div>
+   <div class="component"><b>Relé</b><span>Permite comandar um circuito externo compatível, com projeto elétrico seguro.</span></div>
+   <div class="component"><b>Servo motor</b><span>Executa movimento angular para representar abertura, fechamento ou posicionamento.</span></div>
+   <div class="component"><b>LEDs</b><span>Indicam estados do protótipo, como ligado, monitorando ou alerta.</span></div>
+  </div>
+  <div class="callout mt-24"><strong>Precisão científica:</strong> o HC-SR04 mede distância por ultrassom; ele não mede temperatura. Para monitorar a temperatura da água, o sistema real precisaria de um sensor de temperatura apropriado e instalado corretamente.</div>
+  <div class="section-head mt-24">
+   <span class="kicker">A maquete como modelo</span>
+   <h2>O que ela representa — e o que não representa</h2>
+   <p>A maquete permite visualizar o caminho da água, a captação solar e a lógica de automação. Ela é um modelo didático: não comprova, sozinha, que o sistema teria capacidade para aquecer a piscina real.</p>
+  </div>
+  <div class="grid-2">
+   <article class="card"><h3>Ela pode demonstrar</h3><p>Circulação representada, organização dos componentes, leitura de sensores, acionamento de atuadores e sequência lógica de controle.</p></article>
+   <article class="card"><h3>Para validar a instalação real</h3><p>Seriam necessários cálculos de demanda, avaliação solar do local, dimensionamento hidráulico e térmico, análise estrutural, orçamento e avaliação profissional.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="sustentabilidade">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">05 · Sustentabilidade e impacto social</span>
+   <h2>Uma solução precisa ser eficiente e responsável</h2>
+   <p>A energia solar é renovável, mas qualquer instalação deve ser avaliada considerando materiais, manutenção, custos, segurança, vida útil e condições reais de funcionamento.</p>
+  </div>
+  <div class="grid-3">
+   <article class="card"><div class="card-icon">🌿</div><h3>Uso de energia renovável</h3><p>O aproveitamento da radiação solar pode reduzir a necessidade de energia de outras fontes durante a operação.</p></article>
+   <article class="card"><div class="card-icon">💧</div><h3>Uso consciente da água</h3><p>Monitoramento de vazamentos, manutenção e cobertura da piscina podem contribuir para reduzir desperdícios.</p></article>
+   <article class="card"><div class="card-icon">♿</div><h3>Inclusão digital</h3><p>Um site acessível amplia o acesso à informação científica e permite que mais pessoas explorem o projeto.</p></article>
+  </div>
+  <div class="callout mt-24"><strong>Uma pergunta para reflexão:</strong> além de captar energia solar, que medidas podem diminuir a perda de calor da piscina? Uma cobertura térmica, por exemplo, pode reduzir a evaporação quando a piscina não está em uso.</div>
+ </div>
+</section>
+
+<section class="section soft" id="conclusao">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">06 · Conclusão da investigação</span>
+   <h2>Então, é possível?</h2>
+   <p>O aquecimento solar de uma piscina escolar é tecnicamente possível em determinadas condições. Porém, afirmar que é viável para a piscina específica exige dados reais e um estudo de dimensionamento.</p>
+  </div>
+  <div class="grid-2">
+   <div class="card">
+    <h3>Condições que favorecem</h3>
+    <ul><li>Boa incidência solar e pouco sombreamento.</li><li>Área disponível para os coletores ou painéis.</li><li>Dimensionamento adequado ao volume de água.</li><li>Redução das perdas térmicas.</li><li>Manutenção e operação planejadas.</li></ul>
+   </div>
+   <div class="card">
+    <h3>O que ainda precisa ser investigado</h3>
+    <ul><li>Medidas reais da piscina.</li><li>Temperatura desejada e calendário de uso.</li><li>Dados solares locais e área de instalação.</li><li>Perdas térmicas e consumo da circulação.</li><li>Custos de implantação e manutenção.</li></ul>
+   </div>
+  </div>
+  <div class="quiz mt-24">
+   <span class="pill">Teste seus conhecimentos</span>
+   <h3>Qual é a função principal de um painel fotovoltaico?</h3>
+   <p>Escolha uma alternativa para conferir sua compreensão.</p>
+   <div class="quiz-options" id="quizOptions">
+    <button type="button" data-correct="false">Aquecer diretamente a água que passa por tubulações.</button>
+    <button type="button" data-correct="true">Converter a luz solar em energia elétrica.</button>
+    <button type="button" data-correct="false">Medir a temperatura da piscina.</button>
+   </div>
+   <div class="quiz-feedback" id="quizFeedback" role="status" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="acessibilidade">
+ <div class="container">
+  <div class="section-head">
+   <span class="kicker">07 · Acessibilidade e inclusão</span>
+   <h2>Conhecimento para todo mundo</h2>
+   <p>O AquaCEP inclui recursos para facilitar leitura, navegação e compreensão. A acessibilidade também depende de testes com usuários e tecnologias assistivas.</p>
+  </div>
+  <div class="card">
+   <h3>Personalize sua experiência</h3>
+   <div class="access-panel">
+    <button type="button" id="fontDown" aria-label="Diminuir tamanho da fonte">A− Diminuir fonte</button>
+    <button type="button" id="fontUp" aria-label="Aumentar tamanho da fonte">A+ Aumentar fonte</button>
+    <button type="button" id="dyslexiaBtn" aria-pressed="false">Fonte de leitura</button>
+    <button type="button" id="contrastToggle" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="resetAccess">Restaurar padrão</button>
+   </div>
+   <p class="small muted mt-24">Atalhos: use Tab para avançar, Shift + Tab para voltar e Enter para ativar links e botões. O conteúdo respeita a preferência do dispositivo por redução de movimento.</p>
+  </div>
+  <div class="grid-3 mt-24">
+   <article class="card"><div class="card-icon">⌨️</div><h3>Teclado</h3><p>Links, menus e controles podem ser acessados pelo teclado, com indicação visual de foco.</p></article>
+   <article class="card"><div class="card-icon">🔎</div><h3>Leitura</h3><p>Estrutura semântica, títulos hierárquicos, rótulos de formulário e contraste ajustável.</p></article>
+   <article class="card"><div class="card-icon">🤟</div><h3>Libras</h3><p>O espaço está preparado para o recurso VLibras. O widget depende de conexão com o serviço externo.</p></article>
+  </div>
+  <div class="callout mt-24"><strong>Vídeos em Libras:</strong> esta versão deixa a estrutura preparada para incorporar vídeos sinalizados. Os vídeos específicos do projeto devem ser produzidos e adicionados pela equipe.</div>
+ </div>
+</section>
+
+<section class="section soft" id="mapa">
+ <div class="container">
+  <div class="section-head"><span class="kicker">Navegação</span><h2>Mapa do site</h2><p>Encontre rapidamente cada parte do AquaCEP.</p></div>
+  <div class="site-map">
+   <a href="#inicio">Início<span>Apresentação do projeto</span></a>
+   <a href="#projeto">Projeto<span>Objetivos e proposta</span></a>
+   <a href="#tecnociencia">Tecnociência<span>Física e tecnologias solares</span></a>
+   <a href="#simulador">Simulador<span>Estimativa de energia</span></a>
+   <a href="#robotica">Robótica<span>Arduino e maquete</span></a>
+   <a href="#sustentabilidade">Sustentabilidade<span>Impactos e responsabilidade</span></a>
+   <a href="#conclusao">Conclusão<span>Viabilidade e investigação</span></a>
+   <a href="#acessibilidade">Acessibilidade<span>Recursos de inclusão</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="referencias">
+ <div class="container">
+  <div class="section-head"><span class="kicker">Pesquisa e fundamentação</span><h2>Referências para continuar aprendendo</h2><p>Consulte fontes institucionais para aprofundar a pesquisa e fundamentar o relatório.</p></div>
+  <div class="sources">
+   <a href="https://www.gov.br/inpe/pt-br/assuntos/ultimas-noticias/atlas-brasileiro-de-energia-solar" target="_blank" rel="noopener">INPE — Atlas Brasileiro de Energia Solar<span>Dados e informações sobre o potencial de energia solar no Brasil.</span></a>
+   <a href="https://www.energy.gov/energysaver/solar-water-heaters" target="_blank" rel="noopener">U.S. Department of Energy — Solar Water Heaters<span>Princípios e componentes de sistemas solares térmicos para água.</span></a>
+   <a href="https://www.energy.gov/energysaver/swimming-pool-heating" target="_blank" rel="noopener">U.S. Department of Energy — Swimming Pool Heating<span>Informações sobre aquecimento de piscinas e redução de perdas.</span></a>
+   <a href="https://www.energy.gov/eere/solar/solar-photovoltaic-technology-basics" target="_blank" rel="noopener">U.S. Department of Energy — Solar Photovoltaic Technology Basics<span>Como a tecnologia fotovoltaica converte luz em eletricidade.</span></a>
+  </div>
+  <p class="small muted mt-24">As referências são materiais de consulta. Para o projeto final, registrem a data de acesso e complementem a pesquisa com dados locais, medidas da piscina e fontes técnicas brasileiras.</p>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="container footer-grid">
+  <div><a class="brand" href="#inicio" style="color:#fff"><span class="brand-mark">☀️</span>AquaCEP</a><p>Sol + Água + Tecnologia</p><p class="small">Projeto Integrador · 3º trimestre</p></div>
+  <div><h3>Explore</h3><p><a href="#tecnociencia">Investigação tecnocientífica</a></p><p><a href="#simulador">Simulador</a></p><p><a href="#robotica">Robótica</a></p><p><a href="#mapa">Mapa do site</a></p><a class="back-top" href="#inicio">Voltar ao topo ↑</a></div>
+ </div>
+ <div class="container"><p class="small" style="border-top:1px solid #ffffff2b;padding-top:18px;margin-top:28px">AquaCEP — material educativo. Os simuladores apresentam estimativas didáticas, não substituem avaliação técnica profissional.</p></div>
+</footer>
+
+<!-- VLibras: widget externo. Requer conexão com a internet. -->
+<div vw class="enabled">
+ <div vw-access-button class="active"></div>
+ <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script src="script.js" defer></script>
+</body>
+</html>
